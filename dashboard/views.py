@@ -12,7 +12,7 @@ def add(request):
     context = RequestContext(request)
     
     if request.method == 'POST':
-        form = CandidatesForm(data=request.POST)
+        form = CandidatesForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             return dashboard(request)
