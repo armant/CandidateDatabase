@@ -1,10 +1,8 @@
 from django.conf.urls import patterns, include, url
 import views
+from models import Candidates
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'CandidateDatabase.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
-    url(r'^', views.dashboard, name='dashboard'),
+    url(r'^$', views.dashboard, name='dashboard'),
+    url(r'^add/$', views.add, name='add'),
 )

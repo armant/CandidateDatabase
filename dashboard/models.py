@@ -10,10 +10,10 @@ class Candidates(models.Model):
 	birth_date = models.DateField()
 	nationality = CountryField()
 	LEVELS = (
-		(1, '1'), (2, '2'), (3, '3'), (4, '4'), (5, '5'),
-		(6, '6'), (7, '7'), (8, '8'), (9, '9'),	(10, '10'),
+		('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'),
+		('6', '6'), ('7', '7'), ('8', '8'), ('9', '9'),	('10', '10'),
 	)
-	level_of_english = models.CharField(max_length=2, choices=LEVELS, default=1)
+	level_of_english = models.CharField(max_length=2, choices=LEVELS)
 	note = models.TextField()
 	resume = models.FileField(upload_to='resumes')
         def __unicode__(self):
