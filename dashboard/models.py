@@ -16,3 +16,5 @@ class Candidates(models.Model):
 	level_of_english = models.CharField(max_length=2, choices=LEVELS, default=1)
 	note = models.TextField()
 	resume = models.FileField(upload_to='resumes')
+        def __unicode__(self):
+            return self.first_name + ' ' + self.last_name
