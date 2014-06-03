@@ -1,4 +1,4 @@
-<form id="CandidatesForm" method="post" action="/dashboard/add/" enctype="multipart/form-data">
+<form id="CandidatesForm" method="post" enctype="multipart/form-data">
 	{% csrf_token %}
 	{% for field in form.visible_fields %}
         {{ field.errors }}
@@ -7,3 +7,5 @@
     {% endfor %}
 	<input type="submit" name="submit" value="Save" />
 </form>
+
+<a href="/dashboard">back</a>

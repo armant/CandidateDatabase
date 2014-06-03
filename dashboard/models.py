@@ -13,8 +13,8 @@ class Candidates(models.Model):
 		('1', '1'), ('2', '2'), ('3', '3'), ('4', '4'), ('5', '5'),
 		('6', '6'), ('7', '7'), ('8', '8'), ('9', '9'),	('10', '10'),
 	)
-	level_of_english = models.CharField(max_length=2, choices=LEVELS)
-	note = models.TextField()
-	resume = models.FileField(upload_to='resumes')
+	level_of_english = models.CharField(max_length=2, choices=LEVELS, blank=True)
+	note = models.TextField(blank=True)
+	resume = models.FileField(upload_to='resumes', blank=True)
         def __unicode__(self):
             return self.first_name + ' ' + self.last_name
