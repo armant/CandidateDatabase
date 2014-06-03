@@ -93,3 +93,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 MEDIA_ROOT = '../CandidateDatabase/media/'
 MEDIA_URL = '/media/'
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+os.path.join(BASE_DIR, "static"),
+'/var/www/static/',
+)

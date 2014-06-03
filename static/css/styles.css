@@ -1,0 +1,25 @@
+body {
+    padding-top: 70px;
+    background-image: url(../img/background.png) !important;
+    color: #860000;
+    font-family: Georgia, Cambria !important;
+    font-size: 13px;
+}
+
+.navbar {
+    background-image: url(../img/background.png);
+    border-width: 0px;
+}
+
+#title {
+    color: #860000;
+    font-family: Georgia, Cambria;
+    font-size: 26px;
+}
+#content {
+    padding-bottom: 50px;
+}
+
+#content-login {
+    padding-top: 50px;
+}

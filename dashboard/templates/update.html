@@ -1,6 +1,16 @@
+{% extends "base.html" %}s    
+
+{% block link_1 %}
+    <a href="/dashboard">Cancel</a>
+{% endblock %}
+
+{% block link_2 %}
+    <a href="/logout/">Log out</a>
+{% endblock %}
+
+{% block content %}
 <form action="" method="post">{% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Update" />
 </form>
-
-<a href="/dashboard">back</a>
+{% endblock %}

@@ -11,3 +11,4 @@ class CandidatesTable(tables.Table):
     column_name = tables.TemplateColumn(TEMPLATE, verbose_name=" ")
     class Meta:
         model = Candidates
+        attrs = {"class": "paleblue"}

@@ -1,6 +1,17 @@
+{% extends "base.html" %}
+
+{% block link_1 %}
+    <a href="/dashboard">Cancel</a>
+{% endblock %}
+
+{% block link_2 %}
+    <a href="/logout/">Log out</a>
+{% endblock %}
+
+{% block content %}
 <form action="" method="post">{% csrf_token %}
     <p>Are you sure you want to delete "{{ object }}"?</p>
     <input type="submit" value="Yes" />
 </form>
 
-<a href="/dashboard">back</a>
+{% endblock %}s
