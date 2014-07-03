@@ -9,4 +9,4 @@ Main page that displays on the candidate in a table, showing the following sorta
 Each candidate has corresponding update and delete buttons and forms.
 There is also a form to create a candidate.
 
-Tech: Python, Django, HTML, CSS.
+Tech: Python, Django, Bootstrap, HTML, CSS.
