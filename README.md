@@ -11,4 +11,4 @@ Main page that displays on the candidate in a table, showing the following sorta
 Each candidate has corresponding update and delete buttons and forms. There is also a form to create a candidate.
 
 Tech: Python, Django, Bootstrap, HTML, CSS.<br>
-Plugins: [django-countries](https://code.google.com/p/django-countries/), [django-tables2](http://django-tables2.readthedocs.org/en/latest/), <a href="sdfsdfsd" target="_blank">gdfgfd</a>.
+Plugins: <a href="https://code.google.com/p/django-countries/" target="_blank">django-countries</a>, <a href="http://django-tables2.readthedocs.org/en/latest/" target="_blank">django-tables2</a>.
